@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mind Control | Special Lecture</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --primary:#00e0ff;
+  --dark:#0f2027;
+  --card:rgba(255,255,255,0.08);
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color:#fff;
+}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:2rem 1rem;
+}
+
+.hero h1{
+  font-size:clamp(2rem,5vw,3.5rem);
+  font-weight:700;
+}
+
+.hero h1 span{
+  color:var(--primary);
+}
+
+.hero p{
+  max-width:720px;
+  margin:1.5rem auto;
+  font-size:clamp(1rem,2.5vw,1.2rem);
+  opacity:0.9;
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  padding:0.9rem 2.2rem;
+  background:var(--primary);
+  color:#000;
+  border-radius:50px;
+  font-weight:600;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+  background:#00bcd4;
+}
+
+/* TIMER */
+.event-timer{
+  margin-top:2rem;
+}
+
+.timer-title{
+  font-size:1rem;
+  opacity:0.85;
+}
+
+.timer{
+  margin-top:0.4rem;
+  font-size:clamp(1.2rem,3vw,1.6rem);
+  font-weight:600;
+  color:#ffeb3b;
+}
+
+/* SECTIONS */
+section{
+  padding:3.5rem 1rem;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+}
+
+h2{
+  text-align:center;
+  margin-bottom:2.5rem;
+  color:var(--primary);
+  font-size:clamp(1.6rem,4vw,2.3rem);
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  gap:1.5rem;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+}
+
+.card{
+  background:var(--card);
+  padding:1.8rem;
+  border-radius:16px;
+}
+
+/* LIST */
+ul{
+  list-style:none;
+}
+
+ul li{
+  margin-bottom:0.6rem;
+}
+
+ul li::before{
+  content:"✔ ";
+  color:var(--primary);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:2rem 1rem;
+  font-size:0.9rem;
+  opacity:0.8;
+}
+
+/* MOBILE */
+@media(max-width:480px){
+  .btn{
+    width:100%;
+    padding:1rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div>
+    <h1>Mastering the <span>Mind</span></h1>
+    <p>
+      A Special Lecture on Mind Control by a Highly Experienced
+      Software Industry Professional
+    </p>
+
+    <a class="btn" target="_blank"
+       href="https://docs.google.com/forms/d/e/1FAIpQLSeuFzCgMZfdLSS84OhmJvtTYiEik519DBdSr1tzKKrrCz9gng/viewform?usp=sharing&ouid=107261207659481403907">
+      Register Now
+    </a>
+
+    <div class="event-timer">
+      <div class="timer-title">⏳ Event Starts In</div>
+      <div id="timer" class="timer"></div>
+    </div>
+  </div>
+</div>
+
+<!-- SPEAKER -->
+<section>
+  <div class="container">
+    <h2>About the Speaker</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Industry Experience</h3>
+        <p>
+          Over a decade of experience in the software industry,
+          working with leading multinational technology companies.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Why Attend?</h3>
+        <p>
+          Learn practical mind-control techniques used by professionals
+          to maintain focus, clarity, and mental strength.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEARNING -->
+<section>
+  <div class="container">
+    <h2>What You Will Learn</h2>
+    <div class="grid">
+      <div class="card">
+        <ul>
+          <li>Control over thoughts & emotions</li>
+          <li>Deep focus and clarity</li>
+          <li>Stress management strategies</li>
+          <li>Productivity habits of top professionals</li>
+          <li>Practical techniques for daily life</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DETAILS -->
+<section>
+  <div class="container">
+    <h2>Event Details</h2>
+    <div class="grid">
+      <div class="card"><strong>📅 Date</strong><br>24 January 2026</div>
+      <div class="card"><strong>⏰ Time</strong><br>11:30 AM</div>
+      <div class="card"><strong>📍 Venue</strong><br>College Auditorium</div>
+      <div class="card"><strong>🎓 Eligibility</strong><br>All Students</div>
+    </div>
+
+    <div style="text-align:center;margin-top:2.5rem;">
+      <a class="btn" target="_blank"
+         href="https://docs.google.com/forms/d/e/1FAIpQLSeuFzCgMZfdLSS84OhmJvtTYiEik519DBdSr1tzKKrrCz9gng/viewform?usp=sharing&ouid=107261207659481403907">
+        Secure Your Seat
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Organized by Students of a Premier Institution <br>
+  Limited Seats • First Come First Serve
+</footer>
+
+<script>
+  // EVENT DATE: Jan 24, 2026 | 11:30 AM
+  const eventDate = new Date("2026-01-24T11:30:00").getTime();
+  const timerEl = document.getElementById("timer");
+
+  setInterval(() => {
+    const now = new Date().getTime();
+    const diff = eventDate - now;
+
+    if (diff <= 0) {
+      timerEl.innerHTML = "🚀 Event is Live!";
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    timerEl.innerHTML =
+      `${days}d ${hours}h ${minutes}m ${seconds}s`;
+  }, 1000);
+</script>
+
+</body>
+</html>
